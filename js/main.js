@@ -12,3 +12,11 @@ searchData.addEventListener("keyup", function(){
     }
   }
 });
+
+searchData.addEventListener('search', function(){
+    if ( searchData.value === ""){
+      for (var i = 0; i < imageData.length; i++){
+        imageData[i].style.display = '';
+      }
+    }
+});
